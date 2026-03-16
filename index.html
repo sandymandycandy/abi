@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 19th Birthday Abinaya! 🎂✨</title>
+    <meta name="description" content="A special birthday celebration for Abinaya EV (Gibix) on her 19th birthday">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Outfit:wght@300;400;500;600;700;800&family=Great+Vibes&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-ring">
+                <div class="preloader-ring-inner"></div>
+            </div>
+            <div class="preloader-text">
+                <span class="preloader-letter" style="--d:0">C</span>
+                <span class="preloader-letter" style="--d:1">e</span>
+                <span class="preloader-letter" style="--d:2">l</span>
+                <span class="preloader-letter" style="--d:3">e</span>
+                <span class="preloader-letter" style="--d:4">b</span>
+                <span class="preloader-letter" style="--d:5">r</span>
+                <span class="preloader-letter" style="--d:6">a</span>
+                <span class="preloader-letter" style="--d:7">t</span>
+                <span class="preloader-letter" style="--d:8">i</span>
+                <span class="preloader-letter" style="--d:9">n</span>
+                <span class="preloader-letter" style="--d:10">g</span>
+                <span class="preloader-letter preloader-space" style="--d:11">&nbsp;</span>
+                <span class="preloader-letter" style="--d:12">G</span>
+                <span class="preloader-letter" style="--d:13">i</span>
+                <span class="preloader-letter" style="--d:14">b</span>
+                <span class="preloader-letter" style="--d:15">i</span>
+                <span class="preloader-letter" style="--d:16">x</span>
+                <span class="preloader-letter" style="--d:17">.</span>
+                <span class="preloader-letter" style="--d:18">.</span>
+                <span class="preloader-letter" style="--d:19">.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ambient Particle Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Shooting Stars -->
+    <div class="shooting-stars">
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+    </div>
+
+    <!-- Aurora Effect -->
+    <div class="aurora">
+        <div class="aurora-beam aurora-beam-1"></div>
+        <div class="aurora-beam aurora-beam-2"></div>
+        <div class="aurora-beam aurora-beam-3"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="cursor-dot"></div>
+    <div class="custom-cursor-ring" id="cursor-ring"></div>
+
+    <!-- Navigation Dots -->
+    <nav id="nav-dots">
+        <a href="#hero" class="nav-dot active" data-section="hero" data-label="Welcome"></a>
+        <a href="#about" class="nav-dot" data-section="about" data-label="About"></a>
+        <a href="#showcase" class="nav-dot" data-section="showcase" data-label="Photos"></a>
+        <a href="#cake" class="nav-dot" data-section="cake" data-label="Cake"></a>
+        <a href="#gallery" class="nav-dot" data-section="gallery" data-label="Gallery"></a>
+        <a href="#wishes" class="nav-dot" data-section="wishes" data-label="Wishes"></a>
+    </nav>
+
+    <!-- Music Toggle -->
+    <button class="music-toggle" id="music-toggle" aria-label="Toggle Music">
+        <span class="music-icon" id="music-icon">🎵</span>
+        <span class="music-bars" id="music-bars">
+            <span></span><span></span><span></span><span></span>
+        </span>
+    </button>
+
+    <!-- ===== SECTION 1: HERO ===== -->
+    <section id="hero" class="section hero-section">
+        <div class="hero-gradient-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="orb orb-4"></div>
+        </div>
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>March 16, 2026 — A Special Day</span>
+            </div>
+            <div class="hero-name-wrapper">
+                <p class="hero-pre-text" data-animate="split">✨ Happy Birthday ✨</p>
+                <h1 class="hero-name" id="hero-name" data-animate="reveal">Abinaya</h1>
+                <div class="hero-name-decoration">
+                    <span class="deco-line deco-line-left"></span>
+                    <span class="hero-nickname-badge">&ldquo; Gibix &rdquo;</span>
+                    <span class="deco-line deco-line-right"></span>
+                </div>
+            </div>
+            <div class="hero-age-display">
+                <div class="age-circle">
+                    <svg class="age-circle-svg" viewBox="0 0 200 200">
+                        <circle class="age-circle-bg" cx="100" cy="100" r="90" />
+                        <circle class="age-circle-progress" cx="100" cy="100" r="90" />
+                    </svg>
+                    <div class="age-circle-content">
+                        <span class="age-num">19</span>
+                        <span class="age-label">years</span>
+                    </div>
+                </div>
+                <div class="age-tagline">
+                    <p>of being absolutely</p>
+                    <p class="age-highlight">wonderful ✦</p>
+                </div>
+            </div>
+            <div class="hero-scroll-cta">
+                <div class="scroll-line"></div>
+                <span>Scroll to celebrate</span>
+            </div>
+        </div>
+
+        <!-- Floating hero images -->
+        <div class="hero-floating-images">
+            <div class="hero-float-img hfi-1">
+                <img src="photos/photo1.jpeg" alt="Abinaya">
+            </div>
+            <div class="hero-float-img hfi-2">
+                <img src="photos/photo4.jpeg" alt="Abinaya">
+            </div>
+            <div class="hero-float-img hfi-3">
+                <img src="photos/photo10.jpeg" alt="Abinaya">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider">
+        <div class="divider-gradient"></div>
+    </div>
+
+    <!-- ===== SECTION 2: ABOUT ===== -->
+    <section id="about" class="section about-section">
+        <div class="section-container">
+            <div class="about-layout">
+                <div class="about-photo-stack" data-animate="parallax-group">
+                    <div class="photo-card photo-card-1 scroll-reveal" data-speed="0.05">
+                        <div class="photo-card-inner">
+                            <img src="photos/photo2.jpeg" alt="Abinaya" loading="lazy">
+                            <div class="photo-card-shine"></div>
+                        </div>
+                    </div>
+                    <div class="photo-card photo-card-2 scroll-reveal" data-speed="0.08">
+                        <div class="photo-card-inner">
+                            <img src="photos/photo5.jpeg" alt="Abinaya" loading="lazy">
+                            <div class="photo-card-shine"></div>
+                        </div>
+                    </div>
+                    <div class="photo-card photo-card-3 scroll-reveal" data-speed="0.03">
+                        <div class="photo-card-inner">
+                            <img src="photos/photo9.jpeg" alt="Abinaya" loading="lazy">
+                            <div class="photo-card-shine"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text-content">
+                    <div class="section-label scroll-reveal">
+                        <span class="label-line"></span>
+                        <span>The Birthday Queen</span>
+                    </div>
+                    <h2 class="about-title scroll-reveal" data-animate="split-lines">
+                        Happy Birthday,<br><em>Gibix!</em>
+                    </h2>
+                    <div class="about-description scroll-reveal">
+                        <p>Today we celebrate <strong>19 incredible years</strong> of your beautiful existence. From your contagious laughter to your amazing spirit, you light up every room you walk into.</p>
+                        <p>Here's to another year of adventures, dreams coming true, and memories that last a lifetime. You deserve all the happiness in the world! 🎉</p>
+                    </div>
+                    <div class="about-counters scroll-reveal">
+                        <div class="counter-item">
+                            <div class="counter-value" data-count="19">0</div>
+                            <div class="counter-label">Years of Joy</div>
+                            <div class="counter-bar"><div class="counter-bar-fill" style="--w:100%"></div></div>
+                        </div>
+                        <div class="counter-item">
+                            <div class="counter-value" data-count="6935">0</div>
+                            <div class="counter-label">Days of Smiles</div>
+                            <div class="counter-bar"><div class="counter-bar-fill" style="--w:75%"></div></div>
+                        </div>
+                        <div class="counter-item">
+                            <div class="counter-value counter-infinity">∞</div>
+                            <div class="counter-label">Reasons to Celebrate</div>
+                            <div class="counter-bar"><div class="counter-bar-fill" style="--w:100%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 3: HORIZONTAL PHOTO SHOWCASE ===== -->
+    <section id="showcase" class="section showcase-section">
+        <div class="showcase-header scroll-reveal">
+            <div class="section-label">
+                <span class="label-line"></span>
+                <span>Captured Moments</span>
+            </div>
+            <h2 class="showcase-title" data-animate="split-lines">Memories That<br>Shine Forever</h2>
+        </div>
+        <div class="showcase-scroll-wrapper" id="showcase-scroll">
+            <div class="showcase-track" id="showcase-track">
+                <div class="showcase-card" data-tilt>
+                    <div class="showcase-card-img">
+                        <img src="photos/photo1.jpeg" alt="Abinaya" loading="lazy">
+                    </div>
+                    <div class="showcase-card-overlay">
+                        <span class="showcase-card-number">01</span>
+                    </div>
+                </div>
+                <div class="showcase-card" data-tilt>
+                    <div class="showcase-card-img">
+                        <img src="photos/photo3.jpeg" alt="Abinaya" loading="lazy">
+                    </div>
+                    <div class="showcase-card-overlay">
+                        <span class="showcase-card-number">02</span>
+                    </div>
+                </div>
+                <div class="showcase-card showcase-card-tall" data-tilt>
+                    <div class="showcase-card-img">
+                        <img src="photos/photo6.jpeg" alt="Abinaya" loading="lazy">
+                    </div>
+                    <div class="showcase-card-overlay">
+                        <span class="showcase-card-number">03</span>
+                    </div>
+                </div>
+                <div class="showcase-card" data-tilt>
+                    <div class="showcase-card-img">
+                        <img src="photos/photo7.jpeg" alt="Abinaya" loading="lazy">
+                    </div>
+                    <div class="showcase-card-overlay">
+                        <span class="showcase-card-number">04</span>
+                    </div>
+                </div>
+                <div class="showcase-card" data-tilt>
+                    <div class="showcase-card-img">
+                        <img src="photos/photo8.jpeg" alt="Abinaya" loading="lazy">
+                    </div>
+                    <div class="showcase-card-overlay">
+                        <span class="showcase-card-number">05</span>
+                    </div>
+                </div>
+                <div class="showcase-card showcase-card-tall" data-tilt>
+                    <div class="showcase-card-img">
+                        <img src="photos/photo13.jpeg" alt="Abinaya" loading="lazy">
+                    </div>
+                    <div class="showcase-card-overlay">
+                        <span class="showcase-card-number">06</span>
+                    </div>
+                </div>
+                <div class="showcase-card" data-tilt>
+                    <div class="showcase-card-img">
+                        <img src="photos/photo14.jpeg" alt="Abinaya" loading="lazy">
+                    </div>
+                    <div class="showcase-card-overlay">
+                        <span class="showcase-card-number">07</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="showcase-progress">
+            <div class="showcase-progress-bar" id="showcase-progress-bar"></div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider">
+        <div class="divider-gradient"></div>
+    </div>
+
+    <!-- ===== SECTION 4: CAKE ===== -->
+    <section id="cake" class="section cake-section">
+        <div class="cake-ambient-light"></div>
+        <div class="section-container">
+            <div class="cake-layout">
+                <div class="cake-visual scroll-reveal">
+                    <div class="cake-glow-rings">
+                        <div class="glow-ring glow-ring-1"></div>
+                        <div class="glow-ring glow-ring-2"></div>
+                        <div class="glow-ring glow-ring-3"></div>
+                    </div>
+                    <div class="cake-image-wrapper">
+                        <img src="photos/cake.png" alt="Birthday Cake" class="cake-img" id="cake-img">
+                        <div class="candle-flames" id="candle-flames">
+                            <div class="flame flame-1"><span>🔥</span></div>
+                            <div class="flame flame-2"><span>🔥</span></div>
+                            <div class="flame flame-3"><span>🔥</span></div>
+                            <div class="flame flame-4"><span>🔥</span></div>
+                            <div class="flame flame-5"><span>🔥</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cake-info scroll-reveal">
+                    <div class="section-label">
+                        <span class="label-line"></span>
+                        <span>Make a Wish</span>
+                    </div>
+                    <h2 class="cake-title" data-animate="split-lines">Time to Blow<br>the Candles!</h2>
+                    <p class="cake-description">Close your eyes, make a wish, and blow! Every candle holds a dream waiting to come true. ✨</p>
+                    <button class="blow-btn" id="blow-btn">
+                        <span class="blow-btn-bg"></span>
+                        <span class="blow-btn-text">🌬️ Blow the Candles</span>
+                        <span class="blow-btn-shine"></span>
+                    </button>
+                    <div class="wish-reveal hidden" id="wish-message">
+                        <div class="wish-reveal-inner">
+                            <span class="wish-emoji">🎉</span>
+                            <h3>Happy Birthday Abinaya!</h3>
+                            <p>May all your wishes come true, Gibix! ✨</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 5: PHOTO GALLERY MASONRY ===== -->
+    <section id="gallery" class="section gallery-section">
+        <div class="section-container">
+            <div class="gallery-header scroll-reveal">
+                <div class="section-label">
+                    <span class="label-line"></span>
+                    <span>Photo Gallery</span>
+                </div>
+                <h2 class="gallery-title" data-animate="split-lines">Beautiful<br>Memories</h2>
+                <p class="gallery-subtitle">Every picture tells a story of happiness</p>
+            </div>
+            <div class="gallery-masonry" id="gallery-masonry">
+                <div class="masonry-col masonry-col-1">
+                    <div class="masonry-item" data-magnetic>
+                        <div class="masonry-item-inner">
+                            <img src="photos/photo1.jpeg" alt="Abinaya" loading="lazy">
+                            <div class="masonry-overlay"><div class="masonry-overlay-content"><span>✨</span></div></div>
+                        </div>
+                    </div>
+                    <div class="masonry-item" data-magnetic>
+                        <div class="masonry-item-inner">
+                            <img src="photos/photo4.jpeg" alt="Abinaya" loading="lazy">
+                            <div class="masonry-overlay"><div class="masonry-overlay-content"><span>💖</span></div></div>
+                        </div>
+                    </div>
+                    <div class="masonry-item" data-magnetic>
+                        <div class="masonry-item-inner">
+                            <img src="photos/photo8.jpeg" alt="Abinaya" loading="lazy">
+                            <div class="masonry-overlay"><div class="masonry-overlay-content"><span>🌸</span></div></div>
+                        </div>
+                    </div>
+                    <div class="masonry-item" data-magnetic>
+                        <div class="masonry-item-inner">
+                            <img src="photos/photo12.jpeg" alt="Abinaya" loading="lazy">
+                            <div class="masonry-overlay"><div class="masonry-overlay-content"><span>💜</span></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-col masonry-col-2">
+                    <div class="masonry-item" data-magnetic>
+                        <div class="masonry-item-inner">
+                            <img src="photos/photo2.jpeg" alt="Abinaya" loading="lazy">
+                            <div class="masonry-overlay"><div class="masonry-overlay-content"><span>🌟</span></div></div>
+                        </div>
+                    </div>
+                    <div class="masonry-item" data-magnetic>
+                        <div class="masonry-item-inner">
+                            <img src="photos/photo6.jpeg" alt="Abinaya" loading="lazy">
+                            <div class="masonry-overlay"><div class="masonry-overlay-content"><span>💕</span></div></div>
+                        </div>
+                    </div>
+                    <div class="masonry-item" data-magnetic>
+                        <div class="masonry-item-inner">
+                            <img src="photos/photo10.jpeg" alt="Abinaya" loading="lazy">
+                            <div class="masonry-overlay"><div class="masonry-overlay-content"><span>🦋</span></div></div>
+                        </div>
+                    </div>
+                    <div class="masonry-item" data-magnetic>
+                        <div class="masonry-item-inner">
+                            <img src="photos/photo15.jpeg" alt="Abinaya" loading="lazy">
+                            <div class="masonry-overlay"><div class="masonry-overlay-content"><span>🌈</span></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-col masonry-col-3">
+                    <div class="masonry-item" data-magnetic>
+                        <div class="masonry-item-inner">
+                            <img src="photos/photo3.jpeg" alt="Abinaya" loading="lazy">
+                            <div class="masonry-overlay"><div class="masonry-overlay-content"><span>🎀</span></div></div>
+                        </div>
+                    </div>
+                    <div class="masonry-item" data-magnetic>
+                        <div class="masonry-item-inner">
+                            <img src="photos/photo7.jpeg" alt="Abinaya" loading="lazy">
+                            <div class="masonry-overlay"><div class="masonry-overlay-content"><span>🌺</span></div></div>
+                        </div>
+                    </div>
+                    <div class="masonry-item" data-magnetic>
+                        <div class="masonry-item-inner">
+                            <img src="photos/photo11.jpeg" alt="Abinaya" loading="lazy">
+                            <div class="masonry-overlay"><div class="masonry-overlay-content"><span>⭐</span></div></div>
+                        </div>
+                    </div>
+                    <div class="masonry-item" data-magnetic>
+                        <div class="masonry-item-inner">
+                            <img src="photos/photo14.jpeg" alt="Abinaya" loading="lazy">
+                            <div class="masonry-overlay"><div class="masonry-overlay-content"><span>🎆</span></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div class="lightbox hidden" id="lightbox">
+            <div class="lightbox-backdrop"></div>
+            <button class="lightbox-close" id="lightbox-close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <button class="lightbox-nav lightbox-prev" id="lightbox-prev">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="lightbox-nav lightbox-next" id="lightbox-next">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="lightbox-content">
+                <img src="" alt="Abinaya" id="lightbox-img">
+            </div>
+            <div class="lightbox-counter" id="lightbox-counter">1 / 15</div>
+        </div>
+    </section>
+
+
+
+    <!-- ===== SECTION 7: BIRTHDAY WISHES ===== -->
+    <section id="wishes" class="section wishes-section">
+        <div class="wishes-particles"></div>
+        <div class="section-container">
+            <div class="wishes-card glass-card scroll-reveal">
+                <div class="glass-card-border"></div>
+                <div class="wishes-floating-icons">
+                    <span class="w-icon" style="--x:-20px;--y:-30px;--d:0s">🎈</span>
+                    <span class="w-icon" style="--x:30px;--y:-20px;--d:0.5s">🎀</span>
+                    <span class="w-icon" style="--x:-30px;--y:20px;--d:1s">💝</span>
+                    <span class="w-icon" style="--x:20px;--y:30px;--d:1.5s">🌟</span>
+                    <span class="w-icon" style="--x:0px;--y:-25px;--d:2s">🎁</span>
+                    <span class="w-icon" style="--x:-15px;--y:15px;--d:2.5s">🎂</span>
+                </div>
+                <div class="wishes-card-content">
+                    <div class="section-label">
+                        <span class="label-line"></span>
+                        <span>Birthday Wishes</span>
+                    </div>
+                    <h2 class="wishes-greeting">Dear Abinaya,</h2>
+                    <div class="wishes-paragraphs">
+                        <p class="wish-p">Happyyyyyy birthdayyyyy gibix ♥️🫂☘️ eppvom happy ha irru 🌟</p>
+                        <p class="wish-p">maradhuradha egalalam 🤧 naga irrkom edva irrdhalum pathuklam 💪🏾🔥</p>
+                        <p class="wish-p">Keep shining, keep dreaming, and keep being the incredible person you are, <strong>Gibix</strong>! 💜</p>
+                    </div>
+                    <div class="wishes-signature">
+                        <p>With love and warm wishes,</p>
+                        <p class="signature-name">Your Best Friend ❤️</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grand Finale -->
+            <div class="finale scroll-reveal">
+                <div class="finale-emojis">
+                    <span style="--d:0s;--dx:-30px">🎂</span>
+                    <span style="--d:0.3s;--dx:20px">🎈</span>
+                    <span style="--d:0.6s;--dx:-10px">🎉</span>
+                    <span style="--d:0.9s;--dx:30px">🥳</span>
+                    <span style="--d:1.2s;--dx:-20px">🎁</span>
+                    <span style="--d:1.5s;--dx:10px">💖</span>
+                    <span style="--d:1.8s;--dx:-15px">✨</span>
+                    <span style="--d:2.1s;--dx:25px">🌟</span>
+                </div>
+                <h2 class="finale-heading">
+                    Happy
+                    <span class="finale-19">19<sup>th</sup></span>
+                    Birthday!
+                </h2>
+                <p class="finale-name">Abinaya EV</p>
+                <p class="finale-nickname">&ldquo; Gibix &rdquo;</p>
+                <div class="finale-hearts">
+                    <span style="--d:0s">💜</span>
+                    <span style="--d:0.15s">💜</span>
+                    <span style="--d:0.3s">💜</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>Made with 💜 for Abinaya's 19th Birthday</p>
+        <p class="footer-year">© 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
